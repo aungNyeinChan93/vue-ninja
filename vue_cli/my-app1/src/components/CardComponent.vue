@@ -6,7 +6,7 @@
           <h4>{{ title }}</h4>
         </div>
         <div class="card-bod">
-          <p>
+          <p @click.ctrl="alert_mess">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
             laborum, dolor amet doloribus exercitationem iure optio illum totam
             cumque odio eveniet perspiciatis ducimus accusantium natus adipisci
@@ -23,7 +23,12 @@
 
 <script>
 export default {
-    props:["title"]
+    props:["title"],
+    methods: {
+      alert_mess(){
+        this.$emit("mess_alertr")
+      }
+    },
 };
 </script>
 

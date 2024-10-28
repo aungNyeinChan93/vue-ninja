@@ -26,17 +26,22 @@ export default {
     data() {
         return {
             jobs:[
-                {id:1,name:"aungaung",position:"web-developer"},
-                {id:2,name:"susu",position:"Project-Manager"},
-                {id:3,name:"mgmg",position:"web-designer"},
-                {id:3,name:"ayeaye",position:"Android-Developer"},
-                {id:3,name:"hlahla",position:"web-designer"},
             ]
         }
     },
     methods: {
         hide(job){
             this.jobs = this.jobs.filter(j => j != job)
+        }
+    },
+    mounted() {
+        try {
+            fetch("http://localhost:7000/jobs")
+            .then(response => response.json())
+            .then(data=>this.jobs = data)
+            .catch(err => console.log(err.message))
+        } catch (error) {
+            console.log(error.message);
         }
     },
 }

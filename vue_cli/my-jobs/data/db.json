@@ -1,0 +1,79 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "name": "aungaung",
+            "position": "web-developer"
+        },
+        {
+            "id": 2,
+            "name": "susu",
+            "position": "Project-Manager"
+        },
+        {
+            "id": 3,
+            "name": "mgmg",
+            "position": "web-designer"
+        },
+        {
+            "id": 4,
+            "name": "ayeaye",
+            "position": "Application-Developer"
+        },
+        {
+            "id": 5,
+            "name": "hlahla",
+            "position": "web-designer"
+        },
+        {
+            "id": 6,
+            "name": "hlahla",
+            "position": "web-designer"
+        },{
+            "id": 7,
+            "name": "hlahla",
+            "position": "web-designer"
+        },
+        {
+            "id": 8,
+            "name": "hlahla",
+            "position": "web-designer"
+        }
+    ],
+    "customers":[
+        {
+            "id":1,
+            "name":"aungaung",
+            "age":20,
+            "gender":"male"
+        },
+        {
+            "id":2,
+            "name":"susu",
+            "age":22,
+            "gender":"female"
+        },{
+            "id":3,
+            "name":"mgmg",
+            "age":30,
+            "gender":"male"
+        },
+        {
+            "id":4,
+            "name":"kyawkyaw",
+            "age":20,
+            "gender":"male"
+        },
+        {
+            "id":5,
+            "name":"mumu",
+            "age":22,
+            "gender":"female"
+        },{
+            "id":6,
+            "name":"koko",
+            "age":30,
+            "gender":"male"
+        }
+    ]
+}

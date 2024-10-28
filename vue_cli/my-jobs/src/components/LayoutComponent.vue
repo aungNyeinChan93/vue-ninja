@@ -10,6 +10,9 @@
                         <router-link v-bind:to="{name:'about'}">About</router-link>
                     </li>
                     <li class=" nav-item">
+                        <router-link v-bind:to="{name:'customers'}">Customers</router-link>
+                    </li>
+                    <li class=" nav-item">
                         <router-link :to="{name:'jobs'}">Jobs</router-link>
                     </li>
                 </ul>

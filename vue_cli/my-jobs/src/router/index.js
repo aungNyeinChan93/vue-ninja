@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import JobsView from "@/views/job/JobsView.vue"
 import JobDetailView from '@/views/job/jobDetailView.vue'
 import NotFoundPage from '@/views/NotFoundPage.vue'
+import CustomersView from '@/views/customer/CustomersView.vue'
+import CustomerDetailView from '@/views/customer/CustomerDetailView.vue'
 
 
 const routes = [
@@ -29,6 +31,17 @@ const routes = [
     name:"jobDetail",
     component:JobDetailView,
     props :true
+  },
+  {
+    path:"/customers",
+    name:"customers",
+    component:CustomersView
+  },
+  {
+    path:"/customers/:id",
+    name:"customerDetail",
+    component:CustomerDetailView,
+    props:true
   },
   // redirect route
   {

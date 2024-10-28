@@ -3,7 +3,7 @@
     <div class="container">
         <h4>Customers</h4>
         <div class="col-8 offset-2">
-            <table class=" table table-bordered table-hover ">
+            <table class=" table table-bordered table-hover " v-if="customers.length">
                 <thead class='bg-primary p-2'>
                     <tr>
                         <th>ID</th>
@@ -29,6 +29,9 @@
                     </tr>
                 </tbody>
             </table>
+            <div v-else>
+                <P> loading  ...!</P>
+            </div>
         </div>
     </div>
   </section>

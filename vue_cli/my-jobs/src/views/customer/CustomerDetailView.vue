@@ -1,7 +1,7 @@
 <template>
   <section>
-        <div class="container">
-            <div class="card col-4 offset-4" v-for="customer in customers" :key="customer.id">
+        <div class="container" v-if="customers.length">
+            <div class="card col-4 offset-4" v-for="customer in customers" :key="customer.id" >
                 <div class="card header" >
                     {{ customer.id }} || {{ customer.name }}
                 </div>
@@ -9,6 +9,9 @@
                     <p>{{ customer.age }} || {{ customer.gender }}</p>
                 </div>
             </div>
+        </div>
+        <div v-else>
+            <p>Loading ...!</p>
         </div>
   </section>
 </template>

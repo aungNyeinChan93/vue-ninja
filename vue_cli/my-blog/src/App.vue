@@ -8,6 +8,8 @@
     <br />
     <hr />
     <WatchEffectComponent />
+    <br>
+    <PostsComponents :posts="posts"/>
   </section>
 </template>
 
@@ -16,4 +18,7 @@ import TestRef from "./components/Test-Ref.vue";
 import ReactiveComponent from "./components/ReactiveComponent.vue";
 import ComputedComponent from "./components/ComputedComponent.vue";
 import WatchEffectComponent from "./components/WatchEffectComponent.vue";
+import PostsComponents from "./components/PostsComponents.vue";
+
+const posts = ["post-1",'post-2','post-3'];
 </script>

@@ -5,6 +5,9 @@
     <ReactiveComponent /><br />
     <hr />
     <ComputedComponent />
+    <br />
+    <hr />
+    <WatchEffectComponent />
   </section>
 </template>
 
@@ -12,4 +15,5 @@
 import TestRef from "./components/Test-Ref.vue";
 import ReactiveComponent from "./components/ReactiveComponent.vue";
 import ComputedComponent from "./components/ComputedComponent.vue";
+import WatchEffectComponent from "./components/WatchEffectComponent.vue";
 </script>

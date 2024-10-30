@@ -8,6 +8,10 @@
           <SinglePostComponent :post="post" />
         </li>
       </ul>
+      <div>
+        <h1>LowerCase</h1>
+        <span v-for="p in lowerCase" :key="p">{{ p }}</span>
+      </div>
     </div>
   </section>
 </template>
@@ -27,7 +31,12 @@ export default {
     const changePost = computed(() => {
       return props.posts.map((post) => (post = "this is added title"));
     });
-    return { changePost };
+
+    const lowerCase = computed(() => {
+      return props.posts.map((p) => p.toUpperCase());
+    });
+
+    return { changePost, lowerCase };
   },
 };
 </script>

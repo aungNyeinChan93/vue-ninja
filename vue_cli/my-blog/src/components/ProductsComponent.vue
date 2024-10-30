@@ -39,7 +39,7 @@ export default {
 
     const dataFetching = async () => {
       try {
-        const response = await fetch("http://localhost:4000/product");
+        const response = await fetch("http://localhost:4000/products");
         if (!response.ok) {
           throw Error("posts data not avaliable now!");
         }

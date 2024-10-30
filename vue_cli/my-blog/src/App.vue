@@ -17,6 +17,9 @@
     <br />
     <hr />
     <ProductsComponent />
+    <hr />
+    <br />
+    <JeweleryComponent />
   </section>
 </template>
 
@@ -28,6 +31,7 @@ import WatchEffectComponent from "./components/WatchEffectComponent.vue";
 import PostsComponents from "./components/PostsComponents.vue";
 import LifeCycleHookComponent from "./components/LifeCycleHookComponent.vue";
 import ProductsComponent from "./components/ProductsComponent.vue";
+import JeweleryComponent from "./components/JeweleryComponent.vue";
 
 const posts = ["post-1", "post-2", "post-3"];
 </script>
